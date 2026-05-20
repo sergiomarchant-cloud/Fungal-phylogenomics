@@ -1,0 +1,39 @@
+# This is an exemplification of the accepted YAML syntax accepted by the MpGAP pipeline
+#
+# The file must contain a header-line with the key "samplesheet:". All the
+# input samples must be given nested to this key. Obs: The header-line and
+# the nest indentation (two white spaces) are REQUIRED.
+#
+# Each sample must initiate with the key "id:" listed with a "-". This value
+# is what will be used as prefix for outputs. The input keys must be given 
+# right after this id key, with the same indent without the "-".
+#
+# Please read the https://mpgap.readthedocs.io/en/latest/samplesheet.html documentation page
+# in order to understand how to properly set it up and which are the available/expected keys
+#
+# A template (with the correct fields, syntax and indentation) is given below:
+
+samplesheet:
+- id: Trichoderma_reesei
+  illumina:
+    - reads/cleaned_reads/Trichoderma_reesei_OUT_cleaned_1.fastq.gz
+    - reads/cleaned_reads/Trichoderma_reesei_OUT_cleaned_2.fastq.gz
+  genome_size: 34m  # Rango común: 33-34 Mb
+
+- id: F_verticillioides
+  illumina:
+    - reads/cleaned_reads/F_verticillioides_cleaned_1.fastq.gz
+    - reads/cleaned_reads/F_verticillioides_cleaned_2.fastq.gz
+  genome_size: 42m  # Rango común: 41.9-43 Mb
+
+- id: F_solani
+  illumina:
+    - reads/cleaned_reads/F_solani_cleaned_1.fastq.gz
+    - reads/cleaned_reads/F_solani_cleaned_2.fastq.gz
+  genome_size: 51m  # El complejo F. solani es variable, suele rondar los 50-58 Mb
+
+- id: F_proliferatum
+  illumina:
+    - reads/cleaned_reads/F_proliferatum_cleaned_1.fastq.gz
+    - reads/cleaned_reads/F_proliferatum_cleaned_2.fastq.gz
+  genome_size: 45m  # Rango común: 44-45.5 Mb
