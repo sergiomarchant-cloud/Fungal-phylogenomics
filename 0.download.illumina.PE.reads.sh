@@ -1,8 +1,9 @@
-#Este script utiliza sra-tools intalado en conda y permite descargar lecturas de illumina a partir del ID_SRR. Incluir en la lista aquellos ID de relevancia para el proyecto
+#Este script utiliza sra-tools intalado en conda y permite descargar lecturas de illumina a partir del ID_SRR. 
+#Incluir en la lista aquellos ID de relevancia para el proyecto
 #
 #
 #
-#!/bin/bashSRR34016940
+#Ejectuar este comando si usas sra-tools en entorno conda
 #conda activate sra-tools
 # Lista de pares ID_SRR:Nombre_Especie (PE Confirmados)
 samples=(
